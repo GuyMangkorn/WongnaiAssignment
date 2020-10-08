@@ -1,4 +1,4 @@
-package com.example.wongnaiassignment.api
+package com.example.wongnaiassignment.recyclerCrypto
 
 import com.google.gson.annotations.Expose
 import com.google.gson.annotations.SerializedName

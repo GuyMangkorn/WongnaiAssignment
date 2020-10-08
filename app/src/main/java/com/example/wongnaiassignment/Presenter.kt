@@ -1,8 +1,7 @@
 package com.example.wongnaiassignment
 
-import android.content.Context
 import android.util.Log
-import com.example.wongnaiassignment.api.CoinsObject
+import com.example.wongnaiassignment.recyclerCrypto.CoinsObject
 import com.example.wongnaiassignment.api.CryptoAPI
 import com.example.wongnaiassignment.api.CryptoObject
 import retrofit2.Call

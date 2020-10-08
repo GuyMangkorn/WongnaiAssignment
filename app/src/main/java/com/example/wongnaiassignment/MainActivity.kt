@@ -4,7 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.wongnaiassignment.api.CoinsObject
+import com.example.wongnaiassignment.recyclerCrypto.CoinsObject
 import com.example.wongnaiassignment.recyclerCrypto.CryptoAdapter
 
 class MainActivity : AppCompatActivity() ,IMain.View{

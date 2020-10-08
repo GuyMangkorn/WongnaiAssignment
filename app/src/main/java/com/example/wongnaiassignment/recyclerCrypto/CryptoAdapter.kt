@@ -12,7 +12,6 @@ import androidx.core.text.HtmlCompat
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.wongnaiassignment.R
-import com.example.wongnaiassignment.api.CoinsObject
 
 
 class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val context: Context) : RecyclerView.Adapter<CryptoAdapter.Holder>() {
