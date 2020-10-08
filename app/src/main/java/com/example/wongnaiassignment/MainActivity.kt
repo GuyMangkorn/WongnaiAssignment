@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.util.Log
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.module.AppGlideModule
 import com.example.wongnaiassignment.api.CoinsObject
 import com.example.wongnaiassignment.recyclerCrypto.CryptoAdapter
 
