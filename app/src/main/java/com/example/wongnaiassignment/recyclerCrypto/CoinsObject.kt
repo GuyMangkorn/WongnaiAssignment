@@ -16,5 +16,4 @@ class CoinsObject(
         @SerializedName("iconUrl")
         @Expose
         val iconUrl:String,
-) {
-}
+)

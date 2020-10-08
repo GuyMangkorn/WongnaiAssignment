@@ -21,8 +21,8 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
         private val imageCrypto:ImageView = itemView.findViewById(R.id.imageCrypto)
         fun set(position: Int) {
             name.text = result[position].name
-            val des:String? = result[position].description
-            des.let {
+            val descriptionText:String? = result[position].description
+            descriptionText.let {
                 if(it != null) {
                     description.text = HtmlCompat.fromHtml(it, HtmlCompat.FROM_HTML_MODE_LEGACY)
                 }else{
@@ -30,7 +30,7 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
                 }
             }
             val url:String = result[position].iconUrl
-            Glide.with(context).load(Uri.parse(url)).into(imageCrypto)
+            Glide.with(context).load(Uri.parse(url)).thumbnail(0.1f).into(imageCrypto)
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {

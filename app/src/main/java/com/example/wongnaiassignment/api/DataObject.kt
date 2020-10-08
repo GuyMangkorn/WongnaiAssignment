@@ -8,6 +8,4 @@ class DataObject(
     @SerializedName("coins")
     @Expose
     val coins:ArrayList<CoinsObject>
-) {
-
-}
+)

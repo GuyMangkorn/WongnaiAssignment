@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.wongnaiassignment.recyclerCrypto.CoinsObject
 import com.example.wongnaiassignment.recyclerCrypto.CryptoAdapter
 
-class MainActivity : AppCompatActivity() ,IMain.View{
+class MainActivity : AppCompatActivity(),IMain.View{
     private lateinit var presenter: Presenter
     private lateinit var recyclerView:RecyclerView
     private lateinit var recyclerAdapter: RecyclerView.Adapter<*>
