@@ -1,5 +1,4 @@
 package com.example.wongnaiassignment
-
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -8,6 +7,8 @@ import com.example.wongnaiassignment.recyclerCrypto.CoinsObject
 import com.example.wongnaiassignment.recyclerCrypto.CryptoAdapter
 /**
  * MainActivity declaration Recycler and Presenter
+ *
+ * https://github.com/sotgame1234/WongnaiAssignment
  */
 class MainActivity : AppCompatActivity(),IMain.View{
     private lateinit var presenter: Presenter
@@ -27,9 +28,7 @@ class MainActivity : AppCompatActivity(),IMain.View{
         presenter.loadData()
     }
 
-    /**
-     * Result of api request and set Recyclerview Adapter
-     */
+    /** Result of api request and set Recyclerview Adapter */
     override fun resultData(arr: ArrayList<CoinsObject>) {
         recyclerAdapter = CryptoAdapter(arr,this)
         recyclerView.adapter = recyclerAdapter

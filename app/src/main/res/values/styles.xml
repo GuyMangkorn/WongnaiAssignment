@@ -12,4 +12,10 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.MaterialComponents.CardCreateStyle" >
+        <item name="colorPrimary">@color/colorTint</item>
+        <item name="colorSurface">@color/colorWhite</item>
+        <item name="colorOnSurface">@color/colorAccent2</item>
+    </style>
+
 </resources>

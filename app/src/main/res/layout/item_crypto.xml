@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<com.google.android.material.card.MaterialCardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="17dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:theme="@style/Theme.MaterialComponents.CardCreateStyle"
     android:layout_height="wrap_content"
     android:background="@color/colorWhite"
     android:layout_marginBottom="1dp">
     <LinearLayout
+        android:padding="17dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -24,6 +27,7 @@
                 android:id="@+id/nameCrypto"
                 android:textSize="16sp"
                 android:textStyle="bold"
+                android:textColor="@color/colorBlack"
                 android:text="@string/name_crypto"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"/>
@@ -31,7 +35,7 @@
                 android:textColor="@color/colorDescription"
                 android:ellipsize="end"
                 android:id="@+id/descriptionCrypto"
-                android:layout_marginTop="8dp"
+                android:layout_marginTop="7dp"
                 android:maxLines="3"
                 android:text="@string/no_description"
                 android:layout_width="wrap_content"
@@ -40,4 +44,4 @@
         </LinearLayout>
     </LinearLayout>
 
-</LinearLayout>
+</com.google.android.material.card.MaterialCardView>
