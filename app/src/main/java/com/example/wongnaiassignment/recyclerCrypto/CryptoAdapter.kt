@@ -29,7 +29,9 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
             }
             val url:String? =  result[position].iconUrl
             url.let {
-                Glide.with(context).load(Uri.parse(it)).thumbnail(0.1f)
+                Glide.with(context).load(Uri.parse(it))
+                    .thumbnail(0.1f)
+                    .placeholder(R.drawable.ic_outline_cancel_24)
                     .into(imageCrypto)
             }
         }
