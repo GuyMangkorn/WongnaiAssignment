@@ -35,11 +35,7 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
-        val view:View = LayoutInflater.from(parent.context).inflate(
-            R.layout.item_crypto,
-            parent,
-            false
-        )
+        val view:View = LayoutInflater.from(parent.context).inflate(R.layout.item_crypto, parent, false)
         return Holder(view)
     }
 

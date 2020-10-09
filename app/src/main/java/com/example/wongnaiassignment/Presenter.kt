@@ -16,7 +16,7 @@ class Presenter(private val context: IMain.View) :IMain.Presenter{
                 context.resultData(arr)
             }
             override fun onFailure(call: Call<CryptoObject>, t: Throwable) {
-                Log.d("TAG",t.toString())
+                Log.d("ERROR_ON_CALL_API",t.toString())
             }
 
         })
