@@ -16,6 +16,9 @@ import androidx.swiperefreshlayout.widget.CircularProgressDrawable
 import com.bumptech.glide.Glide
 import com.example.wongnaiassignment.R
 
+/**
+ *  Custom Recyclerview Adapter
+ */
 
 class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val context: Context) : RecyclerView.Adapter<CryptoAdapter.Holder>() {
     inner class Holder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -25,11 +28,13 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
         fun set(position: Int) {
             name.text = result[position].name
             val descriptionText:String? = result[position].description
+            /** Chang text html form to Spanned */
             if(descriptionText != null) {
                 description.text = HtmlCompat.fromHtml(descriptionText, HtmlCompat.FROM_HTML_MODE_LEGACY)
             }else{
                 description.text = context.getString(R.string.no_description)
             }
+            /** set IconImage */
             val url:String? =  result[position].iconUrl
             url.let {
                 Glide.with(context).load(Uri.parse(it))
@@ -51,6 +56,10 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
     override fun getItemCount(): Int {
         return result.size
     }
+
+    /**
+     * Circular Loading for Glide placeholder
+     */
     private fun loading():Drawable{
         val circularProgressDrawable = CircularProgressDrawable(context)
         circularProgressDrawable.strokeWidth = 5f

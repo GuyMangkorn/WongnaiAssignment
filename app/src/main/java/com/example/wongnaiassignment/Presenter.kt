@@ -8,6 +8,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
+/**
+ * Presenter class call Api Request to CryptoObjects
+ */
 class Presenter(private val context: IMain.View) :IMain.Presenter{
     override fun loadData() {
         CryptoAPI().getData().enqueue(object : Callback<CryptoObject> {

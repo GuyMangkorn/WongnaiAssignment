@@ -5,6 +5,9 @@ import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET
 
+/**
+ * API declaration retrofit http GET Method
+ */
 const val URL = "https://api.coinranking.com/v1/public/"
 interface CryptoAPI{
     @GET("coins")
