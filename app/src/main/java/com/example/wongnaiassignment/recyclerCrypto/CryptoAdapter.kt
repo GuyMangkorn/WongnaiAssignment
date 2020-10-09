@@ -22,15 +22,16 @@ class CryptoAdapter(private val result: ArrayList<CoinsObject>, private val cont
         fun set(position: Int) {
             name.text = result[position].name
             val descriptionText:String? = result[position].description
-            descriptionText.let {
-                if(it != null) {
-                    description.text = HtmlCompat.fromHtml(it, HtmlCompat.FROM_HTML_MODE_LEGACY)
-                }else{
-                    description.text = context.getString(R.string.no_description)
-                }
+            if(descriptionText != null) {
+                description.text = HtmlCompat.fromHtml(descriptionText, HtmlCompat.FROM_HTML_MODE_LEGACY)
+            }else{
+                description.text = context.getString(R.string.no_description)
             }
-            val url:String = result[position].iconUrl
-            Glide.with(context).load(Uri.parse(url)).thumbnail(0.1f).into(imageCrypto)
+            val url:String? =  result[position].iconUrl
+            url.let {
+                Glide.with(context).load(Uri.parse(it)).thumbnail(0.1f)
+                    .into(imageCrypto)
+            }
         }
     }
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): Holder {
