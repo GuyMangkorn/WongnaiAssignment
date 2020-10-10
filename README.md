@@ -1,7 +1,7 @@
 ## Android Intern Assignment
 
 ### Cryptocurrency List and Detail Application
-- Created By Mangkorn.
+- Created By `Mangkorn.`
 
 ### Overview
 - Work on Android version 4.4+ (API level 19+)
