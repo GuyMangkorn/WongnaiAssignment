@@ -9,8 +9,6 @@ import com.example.wongnaiassignment.recyclerCrypto.CryptoAdapter
  * MainActivity declaration Recycler and Presenter
  *
  * https://github.com/sotgame1234/WongnaiAssignment
- *
- * for source control
  */
 class MainActivity : AppCompatActivity(),IMain.View{
     private lateinit var presenter: Presenter
